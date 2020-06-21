@@ -1,3 +1,4 @@
+#pour conbiner les sujets des documents(événements culturels) avec les anneés
 list_an = list.files('~/Desktop/Cours/palais de tokyo/out/years/2019')
 list_an
 df2019 <- data.frame(list_an, row.names = NULL)
@@ -53,6 +54,7 @@ names(dfyeartopic)[3] <- "topic"
 dfyeartopic
 write.csv(dfyeartopic, file = "~/Desktop/Cours/palais de tokyo/yeartopics.csv")
 
+#obtenu le dataframe des années et des sujets de chque événement culturel
 str(dfyeartopic)
 
 #dessiner le diagramme pour montre la répétition de sujet par ans
